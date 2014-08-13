@@ -52,6 +52,39 @@ bundle install
 
 rails g rspec:install
 
+rails g scaffold group name:string
+			invoke  active_record
+      create    db/migrate/20140813015238_create_groups.rb
+      create    app/models/group.rb
+      invoke    rspec
+      create      spec/models/group_spec.rb
+      invoke  api_resource_route
+       route    resources :groups, except: [:new, :edit]
+      invoke  scaffold_controller
+      create    app/controllers/groups_controller.rb
+      invoke    rspec
+      create      spec/controllers/groups_controller_spec.rb
+
+rake db:migrate
+
+rails s
+
+added testing
+
+# isntall Yeoman, a front-end scaffolding tool
+npm install -g yo
+npm install -g generator-angular
+
+mkdir client
+cd client
+
+# generate angular app: yo angular dbase-edu
+
+# start grunt server
+grunt serve
+
+# grunt-connect-proxy to forward requests from Grunt server on port 9000 to rails on port 3000
+npm install --save-dev grunt-connect-proxy
 
 
 

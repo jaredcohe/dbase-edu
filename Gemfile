@@ -5,12 +5,9 @@ gem 'rails', '4.1.4'
 gem 'rails-api'
 
 gem 'spring', :group => :development
+gem 'rspec-rails', :group => :test
 
 gem 'pg'
-
-group :test do
-  gem 'rspec-rails'
-end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
